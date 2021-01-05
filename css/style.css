@@ -8,6 +8,7 @@
 }
 body {
   font-family: "Poppins", sans-serif;
+  width: 100%;
 }
 .top-container {
   background: #8360c3; /* fallback for old browsers */
@@ -20,6 +21,7 @@ body {
   text-align: center;
   padding: 150px;
   position: relative;
+  width: 100%;
 }
 
 .top-container h1 {
@@ -205,6 +207,9 @@ footer {
   width: 80%;
   height: 100px;
 }
+.cta-button {
+  display: block;
+}
 
 @media (max-width: 1024px) {
   .top-container {
@@ -297,18 +302,53 @@ footer {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 450px) {
+  .top-container {
+    width: 100%;
+    position: relative;
+  }
+  .top-container h1 {
+    font-size: 70px;
+
+    margin-bottom: 50px;
+  }
+  .top-container p {
+    font-size: 40px;
+  }
+  .intro-container {
+    height: 500px;
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 338px) {
+  .contact {
+    margin: 0;
+  }
+  .top-container {
+  }
+  .top-container h1 {
+    font-size: 50px;
+
+    margin-bottom: 50px;
+  }
+  .top-container p {
+    font-size: 40px;
+  }
   .top-container {
     width: 100%;
   }
-  .top-container h1 {
-    font-size: 80px;
+  .skills1 img {
+    width: 200px;
   }
-  .top-container p {
-    font-size: 30px;
+  .skills2 img {
+    width: 200px;
   }
-  .intro-container {
-    height: 800px;
-    width: 100%;
+  .profile {
+    width: 200px;
   }
 }
